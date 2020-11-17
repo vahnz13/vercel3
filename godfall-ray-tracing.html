@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>Godfall Ray Tracing</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Sasha Grey"
+  },
+  "headline": "Godfall Ray Tracing",
+  "datePublished": "2020-11-16",
+  "image": "https://www.amd.com/system/files/2020-10/647620-directx-godfall-raytracing-off-1260x709.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "FreePikz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=godfall ray tracing",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>	<!-- Head tag Code -->
+<script type='text/javascript' src='//magicianoptimisticbeard.com/b4/4f/47/b44f47e337ede96714c2c09c76a162bb.js'></script></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Game Spots Wallpapers" class="navbar-brand mb-1">Game Spots Wallpapers</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'b1a5d222ae2a8b6cd37ac8240ef74e1f',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magicianoptimisticbeard.com/b1a5d222ae2a8b6cd37ac8240ef74e1f/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Godfall Ray Tracing</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Para hacerlo ha mostrado imágenes comparativas de dos videojuegos recientes que encontramos en pc godfall y dirt 5. Counterplay games will be using dxr via directx 12 ultimate in order to add support. Godfall das von counterplay games entwickelt wird zählt zu den launch spielen der ps5. <br>				
+			</p>
+										<a class="badge badge-danger" href="/escape-from-tarkov-hideout-items-to-keep.html">escape from tarkov hideout items to keep</a>
+											<a class="badge badge-primary" href="/escape-from-tarkov-halloween-gift.html">escape from tarkov halloween gift</a>
+											<a class="badge badge-light" href="/escape-from-tarkov-interchange-map-extractions.html">escape from tarkov interchange map extractions</a>
+											<a class="badge badge-warning" href="/escape-from-tarkov-gunsmith-part-10.html">escape from tarkov gunsmith part 10</a>
+											<a class="badge badge-warning" href="/escape-from-tarkov-gunsmith-part-16.html">escape from tarkov gunsmith part 16</a>
+											<a class="badge badge-success" href="/escape-from-tarkov-font.html">escape from tarkov font</a>
+											<a class="badge badge-secondary" href="/escape-from-tarkov-icon-png.html">escape from tarkov icon png</a>
+											<a class="badge badge-secondary" href="/escape-from-tarkov-ledx.html">escape from tarkov ledx</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<script async="async" data-cfasync="false" src="//magicianoptimisticbeard.com/476583f8dd1428d5a4f02d35017d7a1a/invoke.js"></script>
+<div id="container-476583f8dd1428d5a4f02d35017d7a1a"></div>
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.wccftech.com/wp-content/uploads/2020/10/godfall-features-labeledHD-2060x1141.jpg" data-lightbox="roadtrip" data-title="Amd Helped Godfall And Dirt 5 Devs Implement Ray Traced Shadows Though It S Barely Noticeable">
+											<img class="card-img v-image" src="https://cdn.wccftech.com/wp-content/uploads/2020/10/godfall-features-labeledHD-2060x1141.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSAk9mx6XdVPwMgjUrhuxq7c5QoTQDKaW0Pfw';" alt="Amd Helped Godfall And Dirt 5 Devs Implement Ray Traced Shadows Though It S Barely Noticeable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Amd Helped Godfall And Dirt 5 Devs Implement Ray Traced Shadows Though It S Barely Noticeable</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/s1nutNeKUu3n7P4KCqkFHbubQrxeuh1xaAAzk1EvkHU.gif?format=png8&amp;s=a6076b2ecfe45913b491112fe37dec6712bb638e" data-lightbox="roadtrip" data-title="Godfall Gameplay Ps5 Ps5">
+											<img class="card-img v-image" src="https://external-preview.redd.it/s1nutNeKUu3n7P4KCqkFHbubQrxeuh1xaAAzk1EvkHU.gif?format=png8&amp;s=a6076b2ecfe45913b491112fe37dec6712bb638e" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQiz3Ei8N0o1-B35Vl2gCi83kvlR8TetAALnA';" alt="Godfall Gameplay Ps5 Ps5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Gameplay Ps5 Ps5</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hexus.net/media/uploaded/2020/11/2f20ca0e-3946-40e9-bd8f-a2b81dcfd4d8.jpg" data-lightbox="roadtrip" data-title="K Vhavgorztyum">
+											<img class="card-img v-image" src="https://hexus.net/media/uploaded/2020/11/2f20ca0e-3946-40e9-bd8f-a2b81dcfd4d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR53e_ntpBidgXNI4_5gVqpoFwwaLRlu60fGQ';" alt="K Vhavgorztyum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">K Vhavgorztyum</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://overclock3d.net/gfx/articles/2020/11/02135655520l.jpg" data-lightbox="roadtrip" data-title="Godfall S Pc System Requirements Have Been Released Is Your System Ready Oc3d News">
+											<img class="card-img v-image" src="https://overclock3d.net/gfx/articles/2020/11/02135655520l.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZw_kZ4kKK6w36Wwh1h911ceYaX32wO8HZkw';" alt="Godfall S Pc System Requirements Have Been Released Is Your System Ready Oc3d News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall S Pc System Requirements Have Been Released Is Your System Ready Oc3d News</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://10xhkhmqapoq.cdn.shift8web.com/wp-content/uploads/2020/10/AMD-helped-Godfall-and-DiRT-5-developers-add-ray-traced-shadows.jpg" data-lightbox="roadtrip" data-title="Amd Helped Godfall And Dirt 5 Developers Add Ray Traced Shadows But The Difference Is Subtle Aroged">
+											<img class="card-img v-image" src="https://10xhkhmqapoq.cdn.shift8web.com/wp-content/uploads/2020/10/AMD-helped-Godfall-and-DiRT-5-developers-add-ray-traced-shadows.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQp7gbaXfMmdmwdOYQUoPsS1yV8ow43Wnuu9w';" alt="Amd Helped Godfall And Dirt 5 Developers Add Ray Traced Shadows But The Difference Is Subtle Aroged">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Amd Helped Godfall And Dirt 5 Developers Add Ray Traced Shadows But The Difference Is Subtle Aroged</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.pushsquare.com/365b65827b4ca/all-ps5-launch-games-guide-godfall.original.jpg" data-lightbox="roadtrip" data-title="All Ps5 Launch Games Push Square">
+											<img class="card-img v-image" src="https://images.pushsquare.com/365b65827b4ca/all-ps5-launch-games-guide-godfall.original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSNf9vhqf4_7YbKcXUmWIisiuSbgKUDJpPWQ';" alt="All Ps5 Launch Games Push Square">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">All Ps5 Launch Games Push Square</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://totalcomputer.it/wp-content/uploads/2020/06/1591036594_Godfall-apre-un-piccolo-trailer-per-le-porte-dellevento-PlayStation-978x585.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSNf9vhqf4_7YbKcXUmWIisiuSbgKUDJpPWQ';" alt="All Ps5 Launch Games Push Square">
+										<div class="card-body">
+						<h3 class="h5"><b>Alongside these two games amd confirmed that godfall wow.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Godfall ray tracing</strong>. 
+								
+																	Ps5 launch title godfall boasts ray tracing is a mixture of dark souls and destiny michael harradence april 3 2020 godfall the highly anticipated ps5 launch title from developer counterplay. 
+																	Godfall is inspired by dark souls and other games. 
+																	It is also going to support ray tracing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Godfall is the first confirmed game that is going to run on the ps5. 
+																	We have seen a few glimpses of the game but here we have some new information that you might want to know about. 
+																	Amd has announced that far cry 6 and dirt 5 will have real time ray tracing effects via directx 12 ultimate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Godfall uses ray tracing to improve the game s shadows offering notable changes to the game s environmental features. 
+																	Amd s ray tracing comes to all exisiting games shows ray tracing in dirt 5 and godfall amd has confirmed that its rnda2 based radeon rx 6000 series graphics cards will support ray tracing in. 
+																	Amd muestra el ray tracing en juegos como dirt 5 y godfall amd ha comenzado a mostrar ejemplos sobre el tratamiento de ray tracing en videojuegos con sus gráficas rx 6000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These changes are most noticeable on the distant plants though parts of the player s armour also. 
+																	Counterplay games has finally shared the recommended pc specs for. 
+																	Die redakteure des opm hatten offenbar schon monate vor dem release die möglichkeit einen blick auf. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even without listing what players will need to run the game with ray tracing godfall s pc specs are ramping up hardware demands. 
+																	Thus it will be interesting to see whether the rtx3080 will hit any vram limitations in godfall at 4k ultra. 
+															</p>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://overclock3d.net/gfx/articles/2020/11/03125133872l.jpg" data-lightbox="roadtrip" data-title="Amd Showcases Ray Tracing In Dirt 5 And Godfall Oc3d News">
+											<img class="card-img v-image" src="https://overclock3d.net/gfx/articles/2020/11/03125133872l.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQzw5bq-0hhv6PnkpAOSQxYDIp5BGP51IVYhg';" alt="Amd Showcases Ray Tracing In Dirt 5 And Godfall Oc3d News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Amd Showcases Ray Tracing In Dirt 5 And Godfall Oc3d News</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/G7KpGOFw3B4/hqdefault.jpg" data-lightbox="roadtrip" data-title="Godfall Pc Raytracing Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/G7KpGOFw3B4/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBTWC4x6bn0xZJg-PIEOjTaDaTSW7P7qDmHw';" alt="Godfall Pc Raytracing Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Pc Raytracing Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.amd.com/system/files/2020-10/647620-directx-godfall-raytracing-off-1260x709.jpg" data-lightbox="roadtrip" data-title="Amd Directx 12 Dx12 Technology Amd">
+											<img class="card-img v-image" src="https://www.amd.com/system/files/2020-10/647620-directx-godfall-raytracing-off-1260x709.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3ORmGtpTYnO8h3B-sIPJiseG6aF0VBBQDhw';" alt="Amd Directx 12 Dx12 Technology Amd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Amd Directx 12 Dx12 Technology Amd</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/zsvt4pys7vq51.png" data-lightbox="roadtrip" data-title="Godfall Confirmed To Be Online Only Looks Like Another Launch Game I Won T Be Buying Sadly Ps5">
+											<img class="card-img v-image" src="https://i.redd.it/zsvt4pys7vq51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3TJB59XSOsgXGktvfNbWHDdPQVZLtV6Fmbw';" alt="Godfall Confirmed To Be Online Only Looks Like Another Launch Game I Won T Be Buying Sadly Ps5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Confirmed To Be Online Only Looks Like Another Launch Game I Won T Be Buying Sadly Ps5</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/RcsrxptT6f4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Z94nfc3alila8m">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/RcsrxptT6f4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShaXwTmviTM0o-rUBNOV4g1R41Cf-MDkI5hw';" alt="Z94nfc3alila8m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Z94nfc3alila8m</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.psu.com/wp/wp-content/uploads/2020/04/Godfall-2-1024x576.jpg" data-lightbox="roadtrip" data-title="Ps5 Launch Title Godfall Boasts Ray Tracing Is A Mixture Of Dark Souls And Destiny Playstation Universe">
+											<img class="card-img v-image" src="https://www.psu.com/wp/wp-content/uploads/2020/04/Godfall-2-1024x576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVf4sOlCYwyXZW-JI5t7OpCpICWrk8P79w-g';" alt="Ps5 Launch Title Godfall Boasts Ray Tracing Is A Mixture Of Dark Souls And Destiny Playstation Universe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Ps5 Launch Title Godfall Boasts Ray Tracing Is A Mixture Of Dark Souls And Destiny Playstation Universe</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/gamermatters.com/wp-content/uploads/2020/06/godfall-gameplay-trailer-ps5-pc.jpg?fit=2048%2C1152&amp;ssl=1" data-lightbox="roadtrip" data-title="Godfall Pc Requirements Are Out 12gb Of Ram Need For Minimal Settings">
+											<img class="card-img v-image" src="https://i1.wp.com/gamermatters.com/wp-content/uploads/2020/06/godfall-gameplay-trailer-ps5-pc.jpg?fit=2048%2C1152&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7F_CauVvB4j-Sg5Gf_WEFgliif0WEblXzdQ';" alt="Godfall Pc Requirements Are Out 12gb Of Ram Need For Minimal Settings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Pc Requirements Are Out 12gb Of Ram Need For Minimal Settings</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_2zR2_dYSf8/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Rx 6000 Ray Tracing Support Detailed Does Godfall Need 12gb Vram Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/_2zR2_dYSf8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTCL_nztNKqmM2oFfUvkTooNEJRxTLmLTc4EQ';" alt="Rx 6000 Ray Tracing Support Detailed Does Godfall Need 12gb Vram Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Rx 6000 Ray Tracing Support Detailed Does Godfall Need 12gb Vram Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thesixthaxis.com/wp-content/uploads/2019/12/Godfall_500.jpg" data-lightbox="roadtrip" data-title="First Godfall Pc Gameplay Shows The Game Running In Unreal Engine But Not Unreal Engine 5 Updated Thesixthaxis">
+											<img class="card-img v-image" src="https://www.thesixthaxis.com/wp-content/uploads/2019/12/Godfall_500.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRisaypF5JIqGm7v49IiYU8ajaHvcJ4MdDvaA';" alt="First Godfall Pc Gameplay Shows The Game Running In Unreal Engine But Not Unreal Engine 5 Updated Thesixthaxis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">First Godfall Pc Gameplay Shows The Game Running In Unreal Engine But Not Unreal Engine 5 Updated Thesixthaxis</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hexus.net/media/uploaded/2020/10/bcaa8645-a63b-4346-9613-9e7eb59d0790.jpg" data-lightbox="roadtrip" data-title="Amd Shares Some Rdna 2 Hw Raytracing Performance Indicators Graphics News Hexus Net">
+											<img class="card-img v-image" src="https://hexus.net/media/uploaded/2020/10/bcaa8645-a63b-4346-9613-9e7eb59d0790.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6COCFYWxR6GU6G8d8SebLa0SekuZ4NjT44w';" alt="Amd Shares Some Rdna 2 Hw Raytracing Performance Indicators Graphics News Hexus Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Amd Shares Some Rdna 2 Hw Raytracing Performance Indicators Graphics News Hexus Net</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn3-www.playstationlifestyle.net/assets/uploads/2020/01/BoilingGiganticDalmatian-size_restricted.gif" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn 3aand9gcs7phzmkrs0xg9dvjfpj 800up2ixxgwa2hfq Usqp Cau">
+											<img class="card-img v-image" src="https://cdn3-www.playstationlifestyle.net/assets/uploads/2020/01/BoilingGiganticDalmatian-size_restricted.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRN-dc1X3ElTn2HpwdoUZccQ7VBtCMSX1zrYw';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn 3aand9gcs7phzmkrs0xg9dvjfpj 800up2ixxgwa2hfq Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn 3aand9gcs7phzmkrs0xg9dvjfpj 800up2ixxgwa2hfq Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vortez.net/news_file/19400_amd-raise-the-game-july-2020-godfall-1.jpg" data-lightbox="roadtrip" data-title="Amd Confirms New Radeon Raise The Game Bundle Including Godfall Wow Shadowlands">
+											<img class="card-img v-image" src="https://www.vortez.net/news_file/19400_amd-raise-the-game-july-2020-godfall-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTm0ETMAczGjKQGw3y0lJS_c1S6kbgRG1Ehlg';" alt="Amd Confirms New Radeon Raise The Game Bundle Including Godfall Wow Shadowlands">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Amd Confirms New Radeon Raise The Game Bundle Including Godfall Wow Shadowlands</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://totalcomputer.it/wp-content/uploads/2020/06/1591036594_Godfall-apre-un-piccolo-trailer-per-le-porte-dellevento-PlayStation-978x585.jpg" data-lightbox="roadtrip" data-title="Godfall Pc Un Sacco Di Raytracing Ma Molto Cattive Prestazioni">
+											<img class="card-img v-image" src="https://totalcomputer.it/wp-content/uploads/2020/06/1591036594_Godfall-apre-un-piccolo-trailer-per-le-porte-dellevento-PlayStation-978x585.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSj1xV7MdX93gWh2lFiNHsyUsOhdCrHBn1n5g';" alt="Godfall Pc Un Sacco Di Raytracing Ma Molto Cattive Prestazioni">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Pc Un Sacco Di Raytracing Ma Molto Cattive Prestazioni</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/rbgrUhKCu17r9TStJCgUyxdSTDJi2uqnacntRnaPXmM.jpg?auto=webp&amp;s=4b588817985ae30d36832a0cf4dc6b4ad4c6bbdb" data-lightbox="roadtrip" data-title="Godfall Is Significantly More Expensive On Ps5 Than Pc Ps5">
+											<img class="card-img v-image" src="https://external-preview.redd.it/rbgrUhKCu17r9TStJCgUyxdSTDJi2uqnacntRnaPXmM.jpg?auto=webp&amp;s=4b588817985ae30d36832a0cf4dc6b4ad4c6bbdb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGa4zAVUpe2s2Qx7RzY4kANGAQ7kBELlVquQ';" alt="Godfall Is Significantly More Expensive On Ps5 Than Pc Ps5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Is Significantly More Expensive On Ps5 Than Pc Ps5</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/x3J3FSw2OqkvQaqefObI1gdBKi8_EKRSlXWCs8_48RE.jpg?auto=webp&amp;s=102a4e2a623b60394da6f63eb3062bf580f92220" data-lightbox="roadtrip" data-title="Godfall Won T Have Microtransactions Or Follow Games As A Service Model Ps5">
+											<img class="card-img v-image" src="https://external-preview.redd.it/x3J3FSw2OqkvQaqefObI1gdBKi8_EKRSlXWCs8_48RE.jpg?auto=webp&amp;s=102a4e2a623b60394da6f63eb3062bf580f92220" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQL8oZsgKpEmeK7FO1Zi5Cuyx6-qe8pe5cCrw';" alt="Godfall Won T Have Microtransactions Or Follow Games As A Service Model Ps5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Godfall Won T Have Microtransactions Or Follow Games As A Service Model Ps5</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Trending Search</h3>
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<script async="async" data-cfasync="false" src="//magicianoptimisticbeard.com/23ca49890fdfc8da9852bb99a83b8447/invoke.js"></script>
+<div id="container-23ca49890fdfc8da9852bb99a83b8447"></div>
+	</center>
+</div>						<ul class="list-group">
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-nintendo-switch-price.html">Lego Star Wars The Skywalker Saga Nintendo Switch Price</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-walkthrough.html">Lego Star Wars The Skywalker Saga Walkthrough</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-xbox-one.html">Lego Star Wars The Skywalker Saga Xbox One</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-wallpaper-4k.html">Lego Star Wars The Skywalker Saga Wallpaper 4k</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-special-edition.html">Lego Star Wars The Skywalker Saga Special Edition</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-the-bad-batch.html">Lego Star Wars The Skywalker Saga The Bad Batch</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-nintendo-switch-amazon.html">Lego Star Wars The Skywalker Saga Nintendo Switch Amazon</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-return-of-the-jedi.html">Lego Star Wars The Skywalker Saga Return Of The Jedi</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-spring-2021-release-date.html">Lego Star Wars The Skywalker Saga Spring 2021 Release Date</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-switch-pre-order.html">Lego Star Wars The Skywalker Saga Switch Pre Order</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-ps4-game.html">Lego Star Wars The Skywalker Saga Ps4 Game</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-release-date-uk-ps4.html">Lego Star Wars The Skywalker Saga Release Date Uk Ps4</a></li>
+													<li class="list-group-item"><a href="/levski-star-citizen-map.html">Levski Star Citizen Map</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-planets.html">Lego Star Wars The Skywalker Saga Planets</a></li>
+													<li class="list-group-item"><a href="/lesson-4-2-bones-of-the-skull-answers.html">Lesson 4 2 Bones Of The Skull Answers</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-nintendo-switch-trailer.html">Lego Star Wars The Skywalker Saga Nintendo Switch Trailer</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-price-pc.html">Lego Star Wars The Skywalker Saga Price Pc</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-pc-game.html">Lego Star Wars The Skywalker Saga Pc Game</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-trailer-music.html">Lego Star Wars The Skywalker Saga Trailer Music</a></li>
+													<li class="list-group-item"><a href="/lego-star-wars-the-skywalker-saga-roster.html">Lego Star Wars The Skywalker Saga Roster</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<script async="async" data-cfasync="false" src="//magicianoptimisticbeard.com/23ca49890fdfc8da9852bb99a83b8447/invoke.js"></script>
+<div id="container-23ca49890fdfc8da9852bb99a83b8447"></div>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'b1a5d222ae2a8b6cd37ac8240ef74e1f',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magicianoptimisticbeard.com/b1a5d222ae2a8b6cd37ac8240ef74e1f/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4471629,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4471629&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://magicianoptimisticbeard.com/ns2rpsmj?key=0548a90260151e17d3f7293b4d2e5fc7', '_blank');
+		});
+	</script>
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type='text/javascript' src='//magicianoptimisticbeard.com/86/38/4f/86384f872e4893df77073a19987aeecc.js'></script>
+	
+</body>
+</html>
